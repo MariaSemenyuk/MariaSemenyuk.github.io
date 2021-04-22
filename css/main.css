@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@183&display=swap');
+
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: .7px;
+  font-family: Roboto, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(174, 88, 255);
+}
+
+body,
+#background-image,
+#shadow {
+  height: 100%;
+  width: 100%;
+}
+
+#background-image {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  position: absolute;
+}
+#shadow {
+  background-image: linear-gradient(rgba(0,0,0,0.05) 0%,rgba(0,0,0,.2) 75%,rgba(0,0,0,.4) 100%);
+  position: absolute;
+}
+#container {
+  width: 50%;
+  margin: 100px auto;
+}
+main {
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%), 0 1px 3px 0 rgb(0 0 0 / 20%);
+  border-radius: 3px;
+  background-color: white;
+  padding: 10px 40px 50px 40px;
+}
+
+
+/* HEADER */
+
+h1 {
+  font-size: 2.7em;
+  margin-bottom: 20px;
+}
+
+ul > li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 12px;
+}
+
+/* MAIN */
+
+main section p,
+main section h3,
+main section span {
+  color: #615e5e;
+}
+h3 {
+  background-color: rgb(240, 240, 240);
+  margin: 45px 0 20px 0;
+  padding: 2px 5px;
+}
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: .9em;
+  font-family: 'Raleway', sans-serif;
+  line-height: 24px;
+  width: 50%;
+}
