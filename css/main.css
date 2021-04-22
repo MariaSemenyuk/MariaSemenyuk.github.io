@@ -77,14 +77,15 @@ header span {
 /* MAIN */
 
 main section p,
-main section h3,
+main section h2,
 main section span {
   color: #615e5e;
 }
-h3 {
+h2 {
   background-color: rgb(240, 240, 240);
   margin: 45px 0 20px 0;
   padding: 2px 5px;
+  font-size: 1.17em;
 }
 
 /* FOOTER */

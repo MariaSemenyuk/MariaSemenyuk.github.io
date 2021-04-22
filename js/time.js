@@ -29,3 +29,5 @@ const monthName = monthNames[todaysDate.getMonth()];
 const currentDate = `${dayName}, ${todaysDate.getDate()} ${monthName}, ${todaysDate.getFullYear()}`;
 
 document.getElementById(`currentDate`).textContent = currentDate;
+document.querySelector(`#rigthsYear`).textContent = `${todaysDate.getFullYear()}, `;
+document.getElementById(`modifiedTime`).textContent = `${document.lastModified}`;
