@@ -12,21 +12,19 @@ a {
   text-decoration: none;
   color: rgb(123, 121, 248);
 }
-nav ul > li {
-  list-style: none;
-  display: inline-block;
-  margin-left: 30px;
-}
 
 body {
   width: 100%;
   height: 100%;
-  min-width: 590px;
+  min-width: 1000px;
 }
 header, footer {
   background-color: rgb(248, 246, 121);
   width: 100%;
+  min-width: 1000px;
   padding: 30px;
+  text-align: center;
+  border-radius: 20px;
 }
 
 .attention {
@@ -38,24 +36,28 @@ header, footer {
 img {
   float: right;
   right: 30px;
-  margin: 20px 0 20px 40px;
-  box-shadow: 14px 14px 0px rgb(123, 121, 248);
+  box-shadow: 4px 3px 32px 9px rgba(148, 148, 148, 0.71);
+  border-top-right-radius: 10px;
 }
 h1 {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 /* MAIN */
 
 h2 {
-  font-size: 2.5em;
+  font-size: 1.7em;
   padding: 50px 30px 20px 30px;
+}
+hr {
+  margin-left: 30px;
 }
 main ul li {
   padding: 8px 30px;
+  list-style: none;
 }
 main {
-  margin-bottom: 130px;
+  margin: 0 0 130px 30px;
 }
 
 /* FOOTER */
@@ -65,5 +67,5 @@ footer {
   position: fixed;
 }
 footer span {
-  font-size: 12px;
+  font-size: 16px;
 }
