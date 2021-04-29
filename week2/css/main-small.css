@@ -82,10 +82,10 @@ li:nth-of-type(4) {
 footer a,
 nav a {
   font-size: 1em;
-  color: rgb(152 205 212);
+  color: rgb(96 177 188);
 }
 #container > p a:hover,
 footer a:hover,
 nav a:hover {
-  color: rgb(190 224 229);
+  color: rgb(96 177 188);
 }
