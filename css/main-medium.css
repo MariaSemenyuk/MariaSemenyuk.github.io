@@ -1,0 +1,19 @@
+@media screen and (min-width: 62.5em) {
+  img {
+    right: 30px;
+    float: right;
+    width: 300px;
+    border-top-right-radius: 10px;
+  }
+  header h1 {
+    font-size: 4em;
+    margin: 0;
+  }
+  main {
+    margin: 0 0 130px 30px;
+  }
+  footer {
+    bottom: 0;
+    position: fixed;
+  }
+}
