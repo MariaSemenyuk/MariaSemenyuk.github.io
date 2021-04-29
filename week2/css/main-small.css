@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500&family=Nanum+Gothic&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(30 39 109);
+  font-size: .7em;
+}
+a:hover {
+  color: white;
+}
+
+img {
+  width: 100%;
+  box-shadow: 0 10px 6px -6px #777;
+  border: .5px solid white;
+}
+
+
+/* BASE */
+
+#container {
+  min-width: 400px;
+  margin: 25px auto;
+  border: 10px solid rgb(152 205 212);
+  padding: 15px 20px 20px 20px;
+}
+
+header, footer {
+  padding: 10px;
+  background-color: rgb(30 39 109);
+  color: white;
+  text-align: center;
+}
+
+
+/* HEADER */
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 1.3px;
+}
+
+
+/* MAIN */
+
+main {
+  display: block;
+  width: 100%;
+  margin: 25px 0 40px 0;
+}
+li:last-child {
+  line-height: 1.4em;
+}
+
+ul {
+  background-color: rgb(152 205 212);
+  border-radius: 3px;
+  padding: 20px 10px;
+  list-style: none;
+}
+
+li:first-child {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  padding: 3px 0;
+  border-bottom: 1px solid white;
+}
+
+li:nth-of-type(4) {
+  margin: 15px 0 20px 0;
+}
+
+
+/* FOOTER */
+
+#container > p a,
+footer a,
+nav a {
+  font-size: 1em;
+  color: rgb(152 205 212);
+}
+#container > p a:hover,
+footer a:hover,
+nav a:hover {
+  color: rgb(190 224 229);
+}
