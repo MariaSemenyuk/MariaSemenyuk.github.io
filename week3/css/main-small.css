@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500&family=Nanum+Gothic&display=swap');
+
+:root {
+  --base-font: 'Fira Sans', sans-serif;
+
+  --base-color: lightskyblue;
+  --base2-color: white;
+  --base3-color: darkgray;
+  --font2-color: dimgray;
+  --link-color: #b3e6fd;
+  --link2-color: #6cb6d8;
+  --first-color: orange;
+  --second-color: blue;
+  --third-color: green;
+  --forth-color: red;
+}
+
+a {
+  text-decoration: none;
+  color: var(--base2-color);
+}
+a:hover {
+  color: var(--link-color);
+}
+
+
+/* BASE */
+html, body {
+  background-color: var(--base2-color);
+  font-family: var(--base-font);
+}
+
+.container {
+  width: 50%;
+  margin: 0;
+  background-color: var(--base2-color);
+  padding: 2.5em;
+  border-radius: 7px;
+  min-width: 330px;
+  position: relative;
+}
+
+
+/* HEADER */
+
+.back a {
+  position: absolute;
+  top: 2em;
+  color: var(--base-color);
+}
+
+h1 {
+  font-size: 3.5em;
+  margin-top: 1.3em;
+  margin-bottom: .35em;
+}
+h1 span:nth-child(1) {
+  color: var(--first-color);
+}
+h1 span:nth-child(2) {
+  color: var(--second-color);
+}
+h1 span:nth-child(3) {
+  color: var(--third-color);
+}
+h1 span:nth-child(4) {
+  color: var(--forth-color);
+}
+
+nav {
+  position: relative;
+  display: flex;
+}
+nav p {
+  position: absolute;
+  font-size: 2.5em;
+  color: var(--forth-color);
+}
+nav p:first-child {
+  left: -27px;
+  top: -20px;
+}
+nav p:last-child {
+  right: -27px;
+  top: -20px;
+}
+/* .menu-toggle {
+  display: none;
+} */
+
+ul {
+  background-color: var(--base3-color);
+  display: flex;
+  border-radius: 4px;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 0;
+  text-align: center;
+}
+ul li {
+  list-style: none;
+  font-size: 1em;
+  padding: 1em 1em 1.1em 1em;
+  border-right: 2px solid white;
+}
+ul li:last-child {
+  border-right: none;
+}
+
+
+/* MAIN */
+
+main {
+  min-height: 300px;
+  background-color: var(--base-color);
+  margin: 2.2em 0 3.8em 0 ;
+}
+
+
+/* FOOTER */
+
+footer{
+  color: var(--font2-color);
+  line-height: 1.7em;
+
+}
+footer a {
+  color: var(--link2-color);
+}
+footer a:hover {
+  color: var(--link2-color);
+}
+
+#currentDate {
+  display: none;
+}
+
+
+
+
+/* @media screen and (max-width: 650px) {
+  ul {
+    width: 100%;
+    text-align: left;
+    display: none;
+  }
+  ul li {
+    border-right: none;
+    border-bottom: 2px solid white;
+  }
+  ul li:last-child {
+    border-bottom: none;
+  }
+  nav p:first-child,
+  nav p:last-child {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 1em;
+    color: black;
+    top: -27px;
+  }
+} */
