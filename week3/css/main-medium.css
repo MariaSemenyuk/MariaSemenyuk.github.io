@@ -7,3 +7,40 @@
   }
 
 }
+
+@media screen and (min-width: 650px) {
+  nav ul {
+    text-align: center;
+    display: flex; 
+  }
+  nav ul li {
+    border-right: 2px solid white;
+    border-bottom: none;
+  }
+  nav ul li:last-child {
+    border-right: none;
+  }
+
+  nav {
+    position: relative;
+    display: flex;
+  }
+  nav p {
+    position: absolute;
+    font-size: 2.5em;
+    color: var(--forth-color);
+  }
+  nav p:first-child {
+    left: -27px;
+    top: -20px;
+    display: block;
+  }
+  nav p:last-child {
+    right: -27px;
+    top: -20px;
+    display: block;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}
