@@ -199,10 +199,10 @@ footer{
 
 }
 footer a {
-  color: var(--base3-color);
+  color: var(--forth-color);
 }
 footer a:hover {
-  color: var(--base3-color);
+  color: var(--forth-color);
 }
 
 #currentDate {
