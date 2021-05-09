@@ -3,7 +3,7 @@
     margin: 3em auto;
   }
   html, body {
-    background-color: var(--base-color);
+    background-color: var(--back-color);
   }
 
 }

@@ -5,10 +5,11 @@
 :root {
   --base-font: 'Fira Sans', sans-serif;
 
-  --base-color: #cbe7f8;
+  --base-color: #c9edfd;
   --base2-color: white;
   --base3-color: #87b3c5;
   --font2-color: dimgray;
+  --back-color: #d3d3d3;
 
   --first-color: orange;
   --second-color: blue;
@@ -162,16 +163,23 @@ main {
 
 .typography-box li {
   font-family: 'Merriweather Sans', sans-serif;
+  line-height: 1.6em;
+  padding-top: 1em;
+  padding-bottom: .5em;
 }
 .typography-box li:nth-child(1),
 .typography-box li:nth-child(3) {
   font-size: 3em;
   font-weight: 700;
 }
+.typography-box li:nth-child(2),
+.typography-box li:nth-child(4) {
+  font-size: 1em;
+  font-weight: 400;
+}
 .typography-box li:nth-child(1),
 .typography-box li:nth-child(2) {
   background-color: #ffffff;
-  font-weight: 400;
 }
 .typography-box li:nth-child(3) {
   color: #ffffff;
