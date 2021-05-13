@@ -1,7 +1,7 @@
 @media  screen and (min-width: 799px) {
 
   /* BASE */
-  nav .small-hide li:not(li:first-child),
+  nav .small-hide li:not(:first-child),
   main .small-hide li {
     display: block;
   }
@@ -13,7 +13,7 @@
   main > div,
   footer > div
    {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
   }
   main h2 {
@@ -141,7 +141,7 @@
 
 
   .footer-bar > div {
-    max-width: 770px;
+    max-width: 670px;
     margin: 0 auto;
   }
 }

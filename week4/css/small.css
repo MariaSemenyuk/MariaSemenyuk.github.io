@@ -43,12 +43,14 @@ p, h2, h3 {
   color: var(--base-color);
 }
 
-nav .small-hide li:not(li:first-child),
+nav .small-hide li:not(:first-child),
 main .small-hide li,
 footer div.small-hide  {
   display: none;
 }
-
+body {
+  min-width: 300px;
+}
 
 /* HEADER */
 
@@ -73,7 +75,7 @@ header div div div {
 nav ul {
   position: absolute;
   top: 88px;
-  right: 20px;
+  right: 0;
   color: var(--base2-color);
 }
 nav a {
