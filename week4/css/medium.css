@@ -1,3 +1,8 @@
+@media  screen and (min-width: 416px) {
+  nav ul {
+    top: 52px;
+  }
+}
 @media  screen and (min-width: 799px) {
 
   /* BASE */

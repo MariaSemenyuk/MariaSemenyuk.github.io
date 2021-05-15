@@ -75,7 +75,7 @@ header div div div {
 nav ul {
   position: absolute;
   top: 88px;
-  right: 0;
+  right: 25px;
   color: var(--base2-color);
 }
 nav a {
