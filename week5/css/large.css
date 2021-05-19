@@ -1,0 +1,14 @@
+@media  screen and (min-width: 1000px) {
+
+  header > div,
+  nav ul,
+  main > div,
+  footer > div
+   {
+    max-width: 800px;
+  }
+  
+  .footer-bar > div {
+    max-width: 770px;
+  }
+}

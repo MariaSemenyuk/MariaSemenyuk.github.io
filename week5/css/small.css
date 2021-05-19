@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500&family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap');
+
+:root {
+  --base-font: 'Merriweather Sans', sans-serif;
+  --header-font: 'Fira Sans', sans-serif;
+
+  --base-color: #0e1329;
+  --base2-color: #ffffff;
+  --base3-color: #2c3242;
+  --accent1-color: #364d9f;
+  --accent2-color: #edc215;
+  --accent3-color: #498825;
+}
+
+
+
+/* BASE */
+
+* {
+  font-family: var(--base-font);
+  letter-spacing: .4px;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+h2, h3, header span h1, header span div {
+  font-family: var(--header-font);
+}
+img {
+  width: 100%;
+}
+h2, section, footer > div, .footer-bar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+header, .container h2, footer {
+  background-color: var(--base3-color);
+  color: var(--base2-color);
+}
+p, h2, h3 {
+  color: var(--base-color);
+}
+
+nav .small-hide li:not(:first-child),
+main .small-hide li,
+footer div.small-hide  {
+  display: none;
+}
+body {
+  min-width: 300px;
+}
+
+/* HEADER */
+
+header > div {
+  display: flex;
+	align-items: center;
+}
+header h1 {
+  margin-bottom: .3em;
+}
+header img {
+	width: 70px;
+	height: auto;
+  margin-right: 7px;
+  padding-bottom: 16px;
+}
+header div div div {
+  color: var(--accent3-color);
+  padding-bottom: 10px;
+}
+
+nav ul {
+  position: absolute;
+  top: 88px;
+  right: 25px;
+  color: var(--base2-color);
+}
+nav a {
+  color: var(--base2-color);
+  text-decoration: none;
+}
+
+
+
+
+/* MAIN */
+
+body main {
+  font-weight: 400;
+}
+main h2 {
+  color: var(--accent3-color);
+  font-size: 1.3em;
+  margin-top: 1.3em;
+}
+h3 {
+  font-size: .92em;
+}
+main ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+main ul li {
+  width: 50px;
+  height: 25px;
+  background-color: var(--accent2-color);
+  margin: 0 10px 10px 0;
+}
+.container {
+  background-color: var(--accent1-color);
+  margin: 37px 0;
+  padding-bottom: 20px;
+}
+.container h3 , .container p {
+  color: var(--base2-color);
+  line-height: 1.6em;
+  letter-spacing: .05em;
+}
+.container h2 {
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 7px;
+}
+
+
+/* FOOTER */
+footer {
+  padding: 20px 0;
+  font-size: .7em;
+  color: var(--accent3-color);
+}
+footer h3, footer span, footer p {
+  font-size: 1.6em;
+  color: var(--accent3-color);
+  margin-top: 0;
+}
+footer p {
+  margin: 0;
+  padding-left: 10px;
+  font-size: .9em;
+}
+footer .contact-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-bar {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: var(--base-color);
+  color: var(--base2-color);
+  line-height: 1.7em;
+  font-size: .7em;
+  letter-spacing: .7px;
+}
+.footer-bar a {
+  color: var(--accent3-color);
+}
+
+
+
+#modifiedTime {
+  display: none;
+}
+
+ul.small-hide.navigation.responsive li {
+  display: block;
+  text-align: right;
+  background-color: var(--accent1-color);
+  padding: .7em;
+}
+ul.small-hide.navigation.responsive li a {
+  color: var(--base2-color);
+}
+ul.small-hide.navigation.responsive li:hover {
+  background-color: var(--accent3-color);
+}
