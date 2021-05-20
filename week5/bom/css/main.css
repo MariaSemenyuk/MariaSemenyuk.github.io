@@ -20,7 +20,7 @@ main {
 	padding: 0.5rem;
 	background-color: #bed;
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: auto;
 }
 
 input,
