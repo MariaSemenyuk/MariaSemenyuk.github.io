@@ -58,6 +58,6 @@ li {
   height: 42px;
 }
 
-.back {
+.back, .back:visited {
   color:teal;
 }
