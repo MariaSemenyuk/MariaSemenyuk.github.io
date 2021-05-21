@@ -214,4 +214,5 @@ ul.small-hide.navigation.responsive li a:hover {
   background-color: var(--accent-color);
   line-height: 1.85em;
   display: none;
+  cursor: pointer;
 }
