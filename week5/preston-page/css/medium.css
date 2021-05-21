@@ -1,14 +1,16 @@
 @media  screen and (min-width: 416px) {
   nav ul {
-    top: 52px;
+    top: 72px;
   }
 }
 @media  screen and (min-width: 799px) {
 
   /* BASE */
-  nav .small-hide li:not(:first-child),
-  main .small-hide li {
+  nav .small-hide li:not(:first-child) {
     display: block;
+  }
+  main .small-hide li {
+    display: flex;
   }
   nav .small-hide li:first-child {
     display: none;
@@ -22,7 +24,7 @@
     margin: 0 auto;
   }
   main h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
   h3 {
     font-size: 1.2em;
@@ -49,10 +51,12 @@
     padding: .62em;
   }
   nav li a:hover {
-    background-color: var(--accent3-color);
+    background-color: var(--accent-color);
+    color: var(--base3-color);
   }
-  .active {
+  nav li .active {
     background-color: var(--base3-color);
+    padding: .62em;
   }
 
   /* MAIN */
@@ -75,9 +79,29 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     margin: 2em;
-    background-color: var(--accent3-color);
-    
+    background-color: var(--accent2-color);
   }
+  .banner section div {
+    background-color: transparent;
+    color: var(--base2-color)
+  }
+
+  .container ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .container li {
+    margin: 0 10px 10px 0;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 4px solid var(--base3-color);
+  }
+  .container li span {
+    padding: .3em;
+  }
+
+
   .container section {
     display: grid;
     grid-template-columns: auto auto;
@@ -142,6 +166,17 @@
     width: 3em;
     margin-top: 1em;
     margin-right: 2em;
+  }
+
+  footer div > a {
+    position: relative;
+  }
+  .eye {
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: 45%;
+    left: 45%;
   }
 
 
