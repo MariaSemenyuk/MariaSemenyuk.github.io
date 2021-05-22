@@ -2,7 +2,7 @@ const pancakeAnnouncement = document.querySelector('.pancakes');
 
 const dayOfWeek= todaysDate.getDay();
 
-if ( dayOfWeek == 5 ) {
+if ( dayOfWeek == 6 ) {
   pancakeAnnouncement.style.display = "block";
 }
 
