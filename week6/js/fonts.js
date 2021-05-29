@@ -1,0 +1,1 @@
+WebFont.load({ google: { families: [ 'Fira Sans:500', 'Merriweather Sans:400,700' ] } });
