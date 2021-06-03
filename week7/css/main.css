@@ -6,18 +6,21 @@ body {
 }
 picture {
   display: block;
-  margin: 6em auto;
+  margin: 11em auto;
 }
 
 
 
 
-/* Blur effect */
-article img[data-src] {
-  filter: blur(0.2em);
+/* Blur and opacity effect */
+img[data-src] {
+  filter: blur(0.082em);
+  opacity: .4;
 }
 
-article img {
+img {
   filter: blur(0em);
-  transition: filter 0.5s;
+  transition: filter 0.05s;
+  opacity: 1;
+  transition: opacity 0.05s;
 }
