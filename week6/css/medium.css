@@ -193,7 +193,7 @@
 /* WEATHER GALLERY */
 
 @media  screen and (min-width: 799px) {
-  .weather-gallery section {
+  .weather-gallery .section {
     padding: 0;
     margin-bottom: 50px;
   }
@@ -204,7 +204,7 @@
 }
 
 @media  screen and (min-width: 459px) {
-  .weather-gallery section {
+  .weather-gallery .section {
     font-size: .7em;
   }
   .weather-gallery .picture {

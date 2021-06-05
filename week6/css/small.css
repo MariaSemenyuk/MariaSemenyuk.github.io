@@ -220,7 +220,7 @@ ul.small-hide.navigation.responsive li a:hover {
 
 /* WEATHER GALLERY */
 
-.weather-gallery section {
+.weather-gallery .section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
