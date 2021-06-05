@@ -237,6 +237,9 @@ ul.small-hide.navigation.responsive li a:hover {
   width: 100%;
   margin-bottom: 10px;
 }
+.weather-gallery span {
+  display: block;
+}
 
 
 .visits {
