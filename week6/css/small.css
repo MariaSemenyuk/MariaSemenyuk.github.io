@@ -228,7 +228,7 @@ ul.small-hide.navigation.responsive li a:hover {
   font-size: .85em;
 }
 
-.weather-gallery picture {
+.weather-gallery .picture {
   margin-bottom: 30px;
 }
 
@@ -237,9 +237,7 @@ ul.small-hide.navigation.responsive li a:hover {
   width: 100%;
   margin-bottom: 10px;
 }
-.weather-gallery span {
-  display: block;
-}
+
 
 
 .visits {
