@@ -48,7 +48,7 @@ if('IntersectionObserver' in window) {
 // last visit
 
 if (typeof(Storage) !== "undefined") {
-  const lastVisit = new Date(window.localStorage.lastVisit).getDate();
+  const lastVisit = new Date(localStorage.lastVisit).getDate();
   if (lastVisit == "undefined") {
     document.getElementById('lastVisit').innerHTML = "It is your first visit the page."
     localStorage.setItem("lastVisit", new Date());
