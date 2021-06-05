@@ -40,3 +40,20 @@ if('IntersectionObserver' in window) {
     loadImages(img);
   });
 }
+
+
+
+
+
+// last visit
+
+if (typeof(Storage) !== "undefined") {
+  const lastVisit = new Date(localStorage.lastVisit).getDate();
+  const thisVisit = new Date().getDate();
+  const betweenVisits = thisVisit - lastVisit;
+  
+  document.getElementById('lastVisit').innerHTML = 'Last time you visit this page ' + betweenVisits + ' days ago.';
+
+} else {
+  console.log("this is session storage");
+}

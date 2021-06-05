@@ -197,6 +197,10 @@
     padding: 0;
     margin-bottom: 50px;
   }
+
+  .visits {
+    margin-left: 0px;
+  }
 }
 
 @media  screen and (min-width: 459px) {

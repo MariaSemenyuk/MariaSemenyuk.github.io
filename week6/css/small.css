@@ -225,6 +225,7 @@ ul.small-hide.navigation.responsive li a:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-items: center;
+  font-size: .85em;
 }
 
 .weather-gallery picture {
@@ -235,4 +236,11 @@ ul.small-hide.navigation.responsive li a:hover {
 .weather-gallery img {
   width: 100%;
   margin-bottom: 10px;
+}
+
+
+.visits {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  color: var(--base-color);
 }
