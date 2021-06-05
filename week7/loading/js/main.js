@@ -1,4 +1,4 @@
-// loading process
+// loading process IMG
 
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
@@ -8,6 +8,7 @@ const loadImages = (image) => {
     image.removeAttribute('data-src');
   };
 };
+
 
 
 

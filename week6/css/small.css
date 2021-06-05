@@ -214,3 +214,25 @@ ul.small-hide.navigation.responsive li a:hover {
   display: none;
   cursor: pointer;
 }
+
+
+
+
+/* WEATHER GALLERY */
+
+.weather-gallery section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+}
+
+.weather-gallery picture {
+  margin-bottom: 30px;
+}
+
+
+.weather-gallery img {
+  width: 100%;
+  margin-bottom: 10px;
+}
