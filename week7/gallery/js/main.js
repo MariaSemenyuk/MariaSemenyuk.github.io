@@ -17,8 +17,8 @@ const loadImages = (image) => {
 // timing process
 
 const imgOptions = {
-  threshold: 1,
-  rootmargin: "0px 0px 2000px 0px"
+  rootmargin: "0px 0px 50px 0px",
+  threshold: 1
 };
 
 
@@ -49,10 +49,15 @@ if('IntersectionObserver' in window) {
 
 if (typeof(Storage) !== "undefined") {
   const lastVisit = new Date(window.localStorage.lastVisit).getDate();
-  const thisVisit = new Date().getDate();
-  const betweenVisits = thisVisit - lastVisit;
+  if (lastVisit == "undefined") {
+    document.getElementById('lastVisit').innerHTML = "It is your first visit the page."
+    localStorage.setItem("lastVisit", new Date());
+  } else {
+    const thisVisit = new Date().getDate();
+    const betweenVisits = thisVisit - lastVisit;
+    document.getElementById('lastVisit').innerHTML = 'Last time you visit this page ' + betweenVisits + ' days ago.';
+  }
   
-  document.getElementById('lastVisit').innerHTML = 'Last time you visit this page ' + betweenVisits + ' days ago.';
 
 } else {
   console.log("this is session storage");
