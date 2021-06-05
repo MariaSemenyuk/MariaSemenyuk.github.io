@@ -48,7 +48,7 @@ if('IntersectionObserver' in window) {
 // last visit
 
 if (typeof(Storage) !== "undefined") {
-  const lastVisit = new Date(localStorage.lastVisit).getDate();
+  const lastVisit = new Date(window.localStorage.lastVisit).getDate();
   const thisVisit = new Date().getDate();
   const betweenVisits = thisVisit - lastVisit;
   
