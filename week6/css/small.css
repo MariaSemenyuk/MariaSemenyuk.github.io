@@ -226,6 +226,7 @@ ul.small-hide.navigation.responsive li a:hover {
   align-items: center;
   justify-items: center;
   font-size: .85em;
+  margin: auto 20px;
 }
 
 .weather-gallery .picture {

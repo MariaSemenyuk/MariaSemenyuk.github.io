@@ -21,6 +21,10 @@
 
 
 @media  screen and (min-width: 799px) {
+  .weather-gallery .section {
+    margin: auto 0;
+  }
+
   .weather-gallery .picture:hover {
     box-shadow: 0 0 4px rgb(0 0 0 / 14%), 0 4px 8px rgb(0 0 0 / 28%);
     background-color: var(--accent-color);
