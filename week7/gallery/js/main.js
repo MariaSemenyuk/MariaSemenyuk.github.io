@@ -48,14 +48,14 @@ if('IntersectionObserver' in window) {
 // last visit
 
 if (typeof(Storage) !== "undefined") {
-  if (localStorage.lastVisit == "undefined") {
-    document.getElementById('lastVisit').innerHTML = "It is your first visit the page."
-    localStorage.setItem("lastVisit", new Date());
-  } else {
+  if (localStorage.lastVisit !== "undefined") {
     const lastVisit = new Date(localStorage.lastVisit).getDate();
     const thisVisit = new Date().getDate();
     const betweenVisits = thisVisit - lastVisit;
     document.getElementById('lastVisit').innerHTML = 'Last time you visit this page ' + betweenVisits + ' days ago.';
+  } else {
+    document.getElementById('lastVisit').innerHTML = "It is your first visit the page."
+    localStorage.setItem("lastVisit", new Date());
   }
   
 
