@@ -52,10 +52,10 @@ if (typeof(Storage) !== "undefined") {
     const lastVisit = new Date(localStorage.lastVisit).getDate();
     const thisVisit = new Date().getDate();
     const betweenVisits = thisVisit - lastVisit;
-    document.getElementById('lastVisit').innerHTML = 'Last time you visit this page ' + betweenVisits + ' days ago.';
+    document.getElementById('lastVisit').innerHTML = 'Last time you visit this page ' + betweenVisits + ' day ago.';
   } else {
     document.getElementById('lastVisit').innerHTML = "It is your first visit the page."
-    localStorage.setItem("lastVisit", new Date());
+    window.localStorage.lastVisit =  new Date();
   }
   
 
