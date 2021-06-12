@@ -35,8 +35,9 @@ tbody > :nth-child(2n+2) {
 tbody {
   background-color: #e7f0ed;
 }
-thead tr:first-child {
-  font-size: 2em;
+thead tr:first-child th {
+  font-size: 1.8em;
+  font-weight: 500;
 }
 thead tr:first-child, 
 tfoot {
@@ -59,14 +60,3 @@ tfoot {
     width: 20em;
   }
 }
-
-
-
-
-
-
-/* 
-#e7f0ed
-#e7ffed (data rows) and 
-
- */
