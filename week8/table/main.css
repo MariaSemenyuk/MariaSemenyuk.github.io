@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 html, body {
   height: 100%;
@@ -26,18 +26,26 @@ table {
 th, td {
   border: 1px solid #ccc;
   padding: .5em;
+}
+td {
   font-size: 1.1em;
   font-weight: 400;
 }
+
 tbody > :nth-child(2n+2) {
   background-color: #e7ffed;
 }
 tbody {
   background-color: #e7f0ed;
 }
+tbody tr:nth-child(5) :first-child {
+  font-style: italic;
+}
 thead tr:first-child th {
   font-size: 1.8em;
-  font-weight: 500;
+}
+thead {
+  font-weight: 700;
 }
 thead tr:first-child, 
 tfoot {
