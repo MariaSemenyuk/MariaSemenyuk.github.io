@@ -190,6 +190,15 @@ main {
   background-color: #2c3242;
 }
 
+.wireframe-box img {
+  margin-right: 1em;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.wireframe-box {
+  line-height: 2em;
+}
+
 
 /* FOOTER */
 

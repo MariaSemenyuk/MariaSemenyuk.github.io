@@ -19,6 +19,9 @@ body > div {
 body h1, footer {
   color: rgb(60, 64, 68);
 }
+footer a {
+  color: rgb(82, 124, 165);
+}
 
 body p {
   font-weight: 200;
