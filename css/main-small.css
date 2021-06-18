@@ -28,6 +28,8 @@ header, footer {
 
 .attention {
   background-color: rgb(123, 121, 248);
+  color: white;
+  padding: .1em .2em;
 }
 
 /* HEADER */

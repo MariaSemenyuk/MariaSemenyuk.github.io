@@ -25,11 +25,12 @@ footer a {
 
 body p {
   font-weight: 200;
+  font-size: .8em;
 }
 body h2 {
   padding-top: .5em;
   padding-bottom: .5em;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 body p, body h2 {
   padding-left: 16px;
@@ -39,28 +40,44 @@ body p, body h2 {
 p:nth-child(3) {
   padding-bottom: 1em;
 }
+
 img {
   width: 100%;
   
 }
 
 section {
-  background-color:rgb(48, 70, 92);
-  margin-bottom: 2.2em;
-  margin-right: 1em;
+  background-color: rgb(102 102 102);
   padding: 0;
   width: 100%;
+  margin-bottom: 2em;
 }
 
-@media screen and (min-width: 607px) {
-  section {
-    width: 240px;
-  }
+@media screen and (min-width: 550px) {
   main > div {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section {
+    margin-bottom: 0;
+  }
+  section > div {
+    height: 45vw;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
   body > div {
     max-width: 1030px;
+  }
+  section > div {
+    height: 20vw;
+    overflow: hidden;
   }
 }
