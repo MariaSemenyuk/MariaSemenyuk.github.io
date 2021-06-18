@@ -22,6 +22,9 @@ body h1, footer {
 footer a {
   color: rgb(82, 124, 165);
 }
+footer {
+  margin-top: 3em;
+}
 
 body p {
   font-weight: 200;
