@@ -269,6 +269,7 @@ ul.small-hide.navigation.responsive li a:hover {
 .part section div {
   background-color: transparent;
   color: var(--base2-color);
+  display: block;
 }
 .part h2 {
   margin: .1em 0 .1em 0;

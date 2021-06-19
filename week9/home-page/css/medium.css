@@ -243,7 +243,7 @@
   img.weather-icon {
     display: none;
   }
-  .part section span {
+  .part section div {
     color: var(--base3-color);
   }
   .part section h2 {
