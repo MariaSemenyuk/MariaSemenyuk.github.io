@@ -12,12 +12,16 @@ fetch(jsonURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject['towns'];
-    // console.table(jsonObject);
-    for (let i = 0; i < towns.length; i++ ) {
-      townName[i].innerHTML = towns[i].name;
-      townMotto[i].innerHTML = towns[i].motto;
-      townYear[i].innerHTML = 'Year Founded: ' + towns[i].yearFounded;
-      townPopulation[i].innerHTML = 'Population: ' + towns[i].currentPopulation;
-      townRain[i].innerHTML = 'Annual Rian Fall: ' + towns[i].averageRainfall;
+
+    function townCard(i, jsonIndex) {
+      townName[i].innerHTML = towns[jsonIndex].name;
+      townMotto[i].innerHTML = towns[jsonIndex].motto;
+      townYear[i].innerHTML = 'Year Founded: ' + towns[jsonIndex].yearFounded;
+      townPopulation[i].innerHTML = 'Population: ' + towns[jsonIndex].currentPopulation;
+      townRain[i].innerHTML = 'Annual Rian Fall: ' + towns[jsonIndex].averageRainfall;
     }
+
+    townCard(0, 0);
+    townCard(1, 6);
+    townCard(2, 2);
   });
