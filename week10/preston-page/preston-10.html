@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-slace=1.0">
+  <meta name="description" content="Projects and assignments for WDD230 course. Maria Semenyuk. BYUI">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Preston Page</title>
+  <link href="../css/normalize.css" rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <div class="pancakes">Saturday = Preston Pancakes in the Park! &#129383;<br> 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+      <div>
+        <img src="images/site-logo.png" alt="logo image three droplets">
+        <div>
+          <h1>Idaho Three Droplets</h1>
+          <div>Keep in touch!</div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="small-hide navigation">
+        <li><a href="#" class="humburger">&#9776;</a></li>
+        <li><a href="../index.html">Back</a></li>
+        <li><a href="preston-6.html" class="active">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div>
+        <h2>Preston Idaho</h2>
+        <div class="banner">
+          <!-- <img src="images/banner.jpg" alt="nature of Preston"> -->
+          <img src="images/preston.jpeg" sizes="100vw" alt="nature of Preston"
+            srcset="images/preston300.jpeg 350w,
+                    images/preston500.jpeg 500w,
+                    images/preston800.jpeg 1600w">
+          <section>
+            <h3>Weather summary</h3>
+            <div>
+              <span class="left-column">Currently:</span>
+              <span class="right-column">Sunny</span>
+              <span class="left-column">High:</span>
+              <span class="right-column"><span id="airTemperature">46</span> &#176;F</span>
+              <span class="left-column">Wind Chill:</span>
+              <span class="right-column"><span id="windChill"></span></span>
+              <span class="left-column">Humidity</span>
+              <span class="right-column">69%</span>
+              <span class="left-column">Wind Speed:</span>
+              <span class="right-column"><span id="windSpeed">5</span> mph</span>
+            </div>
+          </section>
+        </div>
+        <div class="container">
+          <h2>Five Day Forecast</h2>
+          <ul class="small-hide">
+            <li>
+              <span>Wen</span>
+              <span>&#9928;</span>
+              <span>72&#176;F</span>
+            </li>
+            <li>
+              <span>Thu</span>
+              <span>&#9928;</span>
+              <span>78&#176;F</span>
+            </li>
+            <li>
+              <span>Fri</span>
+              <span>&#9925;</span>
+              <span>87&#176;F</span>
+            </li>
+            <li>
+              <span>Sat</span>
+              <span>&#9925;</span>
+              <span>89&#176;F</span>
+            </li>
+            <li>
+              <span>Sun</span>
+              <span>&#127784;</span>
+              <span>69&#176;F</span>
+            </li>
+          </ul>
+          <section>
+            <h3>Article Title</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt explicabo recusandae similique inventore ratione, ipsum quo ea quisquam corrupti nobis placeat voluptas ut consequuntur est, beatae culpa ipsa nam quam?</p>
+            <div>
+              <!-- <img src="images/article-image.jpg" alt="article new step"> -->
+              <img src="images/article-image.jpg" sizes="100vw" alt="article new step"
+                srcset="images/article-image240.jpg 350w,
+                        images/article-image440.jpg 500w,
+                        images/article-image560.jpg 800w,
+                        images/article-image740.jpg 1600w">
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <div>
+          <h3>Contact information</h3>
+          <div class="contact-line small-hide">
+            <span>&#9880;</span>
+            <p>US, Idaho, Pocatello, 43708</p>
+          </div>
+          <div class="contact-line">
+            <span>&#9993;</span>
+            <p>999@999.com</p>
+          </div>
+          <div class="contact-line">
+            <span>&#9990;</span>
+            <p>+999 999 9999</p>
+          </div>
+          <div class="small-hide media">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="images/1.png" alt="facebook website">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <img src="images/2.png" alt="twetter website">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="images/3.png" alt="instagram website">
+            </a>
+          </div>
+        </div>
+        <a href="https://www.windy.com/-Temperature-temp?temp,42.121,-111.782,11" target="_blank">
+          <img src="images/map.png" alt="Preston map">
+          <img class="eye" src="images/eye.png" alt="look to the map">
+        </a>
+      </div>
+    </footer>
+
+    <div class="footer-bar">
+      <div>
+        <span>&copy;&nbsp;<span id="rigthsYear"></span>All&nbsp;rights&nbsp;reserved&nbsp;&nbsp;|</span>
+        <span>&nbsp;Maria&nbsp;Semenyuk&nbsp;&nbsp;|</span>
+        <span>&nbsp;<a href="https://www.byui.edu/online" target="_blank">BYUI&nbsp;Online&nbsp;Learning&nbsp;&nbsp;|</a></span>
+        <span>&nbsp;Current&nbsp;date:&nbsp;<span id="currentDate"></span></span>
+        <span id="modifiedTime"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../../js/time.js"></script>
+  <script src="js/toggle.js"></script>
+  <script src="js/pancakes.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fonts.js"></script>
+  <script src="js/windchill.js"></script>
+</body>
+</html>
