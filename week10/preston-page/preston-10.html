@@ -6,7 +6,7 @@
   <meta name="description" content="Projects and assignments for WDD230 course. Maria Semenyuk. BYUI">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Preston Page</title>
-  <link href="../css/normalize.css" rel="stylesheet">
+  <link href="../../css/normalize.css" rel="stylesheet">
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
   <link href="css/large.css" rel="stylesheet">
@@ -28,8 +28,8 @@
     <nav>
       <ul class="small-hide navigation">
         <li><a href="#" class="humburger">&#9776;</a></li>
-        <li><a href="../index.html">Back</a></li>
-        <li><a href="preston-6.html" class="active">Preston</a></li>
+        <li><a href="../../index.html">Back</a></li>
+        <li><a href="preston-10.html" class="active">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
@@ -50,15 +50,15 @@
             <h3>Weather summary</h3>
             <div>
               <span class="left-column">Currently:</span>
-              <span class="right-column">Sunny</span>
+              <span class="right-column" id="description"></span>
               <span class="left-column">High:</span>
-              <span class="right-column"><span id="airTemperature">46</span> &#176;F</span>
+              <span class="right-column"><span id="airTemperature"></span> &#176;F</span>
               <span class="left-column">Wind Chill:</span>
               <span class="right-column"><span id="windChill"></span></span>
               <span class="left-column">Humidity</span>
-              <span class="right-column">69%</span>
+              <span class="right-column"><span id="humidity"></span>%</span>
               <span class="left-column">Wind Speed:</span>
-              <span class="right-column"><span id="windSpeed">5</span> mph</span>
+              <span class="right-column"><span id="windSpeed"></span> mph</span>
             </div>
           </section>
         </div>
@@ -159,6 +159,6 @@
   <script src="js/pancakes.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/fonts.js"></script>
-  <script src="js/windchill.js"></script>
+  <script src="js/prestonWeatherAPI.js"></script>
 </body>
 </html>

@@ -114,6 +114,8 @@ main h2 {
 }
 .left-column {
   grid-column: 1 / 2;
+  justify-self: end;
+  color: var(--base-color);
 }
 .right-column {
   grid-column: 2 / 3;
