@@ -37,7 +37,7 @@ fetch(prestonJSON)
     return response.json();
   })
   .then(function (jsObject) {
-    // console.table(jsObject);
+    console.table(jsObject);
     const daysNames = ['Sun', 'Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat'];
     const today = new Date();
 
@@ -45,7 +45,6 @@ fetch(prestonJSON)
       newList.dt_txt.includes('18:00:00'));
     
       for (let i = 0; i < 5; i++) {
-        let index = i + 1;
         let dayBlock = document.createElement('li');
         let dayName = document.createElement('span');
         let dayIcon = document.createElement('img');
@@ -54,15 +53,15 @@ fetch(prestonJSON)
         dayBlock.appendChild(dayIcon);
         dayBlock.appendChild(dayTemp);
 
-        let dayIndex = today.getDay() + index;
+        let dayIndex = today.getDay() + i + 1;
         if (dayIndex > 6) {
           dayIndex = dayIndex - 7;
         }
         dayName.textContent = daysNames[dayIndex];
-        dayIcon.textContent = newList[i+1].weather[0].icon;
-        dayIcon.setAttribute('src', 'https://openweathermap.org/img/wn/' + newList[index].weather[0].icon + '.png');
-        dayIcon.setAttribute('alt', newList[index].weather[0].description);
-        dayTemp.textContent = (newList[index].main.temp).toFixed(0) + ' °F';
+        dayIcon.textContent = newList[i].weather[0].icon;
+        dayIcon.setAttribute('src', 'https://openweathermap.org/img/wn/' + newList[i].weather[0].icon + '.png');
+        dayIcon.setAttribute('alt', newList[i].weather[0].description);
+        dayTemp.textContent = (newList[i].main.temp).toFixed(0) + ' °F';
 
         document.querySelector('.container ul').appendChild(dayBlock);
 
