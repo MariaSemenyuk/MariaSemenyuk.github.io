@@ -186,6 +186,7 @@ footer .contact-line {
 }
 .footer-bar a {
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 
