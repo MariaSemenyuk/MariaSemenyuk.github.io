@@ -160,9 +160,9 @@ main h2 {
   color: var(--base3-color);
   font-size: .8em;
 }
-#upcoming-events-preston:hover > div,
-#upcoming-events-fishHaven:hover > div,
-#upcoming-events-sodaSprings:hover > div {
+#upcoming-events-preston:hover,
+#upcoming-events-fishHaven:hover,
+#upcoming-events-sodaSprings:hover {
   color: var(--accent-color);
 }
 
