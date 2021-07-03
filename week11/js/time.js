@@ -28,6 +28,6 @@ const dayName = dayNames[todaysDate.getDay()];
 const monthName = monthNames[todaysDate.getMonth()];
 const currentDate = `${dayName}, ${todaysDate.getDate()} ${monthName}, ${todaysDate.getFullYear()}`;
 
-document.getElementsByClassName(`currentDate`).textContent = currentDate;
-document.getElementsByClassName(`rigthsYear`).textContent = `${todaysDate.getFullYear()}, `;
-document.getElementsByClassName(`modifiedTime`).textContent = `${document.lastModified}`;
+document.querySelector(`.currentDate`).textContent = currentDate;
+document.querySelector(`.rigthsYear`).textContent = `${todaysDate.getFullYear()}, `;
+document.querySelector(`.modifiedTime`).textContent = `${document.lastModified}`;

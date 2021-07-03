@@ -67,6 +67,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     height: 270px;
+    margin-top: 40px;
   }
   .part section div,
   .part section h2 {

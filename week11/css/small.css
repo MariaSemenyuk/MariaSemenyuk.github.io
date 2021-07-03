@@ -157,8 +157,13 @@ main h2 {
 #upcoming-events-sodaSprings {
   margin: 2em;
   line-height: 2em;
-  color: var(--accent2-color);
+  color: var(--base3-color);
   font-size: .8em;
+}
+#upcoming-events-preston:hover > div,
+#upcoming-events-fishHaven:hover > div,
+#upcoming-events-sodaSprings:hover > div {
+  color: var(--accent-color);
 }
 
 
@@ -272,9 +277,6 @@ ul.small-hide.navigation.responsive li a:hover {
 
 /* HOME PAGE */
 
-.home-page .banner {
-  margin-top: 40px;
-}
 
 .banner .part {
   display: grid;
