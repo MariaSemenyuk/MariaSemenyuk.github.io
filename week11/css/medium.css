@@ -176,7 +176,7 @@
     position: absolute;
     width: 50px;
     top: 45%;
-    left: 45%;
+    left: 47%;
   }
 
 
@@ -217,6 +217,14 @@
     width: 200px;
     margin: 0 0 10px 0;
   }
+
+  .weather-gallery .picture:hover {
+    box-shadow: 0 0 4px rgb(0 0 0 / 14%), 0 4px 8px rgb(0 0 0 / 28%);
+    background-color: var(--accent-color);
+  }
+  .weather-gallery .picture:hover > div {
+    padding-left: .3em;
+  }
 }
 
 
@@ -230,6 +238,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     overflow: hidden;
+    background-color: transparent;
   }
   .part img {
     grid-column: 1 / 2;
@@ -249,7 +258,7 @@
   }
   .part section h2 {
     line-height: .8em;
-    margin-top: .05em;
+    margin-top: .4em;
     color: var(--base3-color);
   }
   .part section div {

@@ -6,6 +6,7 @@ let townYear = document.getElementsByClassName('townYear');
 let townPopulation = document.getElementsByClassName('townPopulation');
 let townRain = document.getElementsByClassName('townRain');
 
+
 fetch(jsonURL)
   .then(function (response) {
     return response.json();
@@ -24,4 +25,5 @@ fetch(jsonURL)
     townCard(0, 0);
     townCard(1, 6);
     townCard(2, 2);
+
   });

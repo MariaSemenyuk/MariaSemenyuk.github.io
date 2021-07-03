@@ -1,7 +1,7 @@
-const prestonJSON = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=2ecb8eb95419d049bfa52bf7b8d4678d';
-const prestonForesactJSON = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=2ecb8eb95419d049bfa52bf7b8d4678d';
+const sodaSpringsJSON = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=2ecb8eb95419d049bfa52bf7b8d4678d';
+const sodaSpringsForesactJSON = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=2ecb8eb95419d049bfa52bf7b8d4678d';
 
-fetch(prestonJSON)
+fetch(sodaSpringsJSON)
   .then(function (response) {
     return response.json();
   })
@@ -18,7 +18,7 @@ fetch(prestonJSON)
     document.getElementById('windSpeed').textContent = speedValue.toFixed(0);
 
 
-    if (tempValue <= 90 && speedValue >= 3) {
+    if (tempValue <= 90 && speedValue >= 0) {
       let s = Math.pow(speedValue, 0.16);
       windChill = 35,74 + 0.6215 * tempValue - 35.75 * s + 0.4275 * tempValue * s;
       windChill.toFixed(0);
@@ -32,7 +32,7 @@ fetch(prestonJSON)
 
 
 
-  fetch(prestonForesactJSON)
+  fetch(sodaSpringsForesactJSON)
   .then(function (response) {
     return response.json();
   })
