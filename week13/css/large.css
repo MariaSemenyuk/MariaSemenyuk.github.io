@@ -1,0 +1,12 @@
+@media all and (min-width: 765px) {
+  footer .social {
+    margin-top: 6em;
+  }
+  footer > div:first-child {
+    padding-bottom: 2em;
+  }
+  footer > div:first-child {
+    flex-direction: row;
+    align-items: center;
+  }
+}

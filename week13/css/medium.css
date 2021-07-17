@@ -1,0 +1,12 @@
+@media all and (min-width: 570px) {
+  header {
+    position: fixed;
+  }
+  .firstView-intro {
+    width: 370px;
+  }
+  main, 
+  footer > div {
+    width: 60%;
+  }
+}
