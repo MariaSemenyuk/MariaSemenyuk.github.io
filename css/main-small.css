@@ -65,3 +65,10 @@ main {
 footer span {
   font-size: 16px;
 }
+
+
+
+
+.hidden-item {
+  opacity: 0;
+}
