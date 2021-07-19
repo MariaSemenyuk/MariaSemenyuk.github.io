@@ -8,11 +8,11 @@
 /* BASE */
 
 :root {
-  --first-color: #2D3142;
-  --second-color: #4F5D75;
-  --third-color: #BFC0C0;
-  --fourth-color: #FFFFFF;
-  --fifth-color: #EF8354;
+  --first-color: #2D3142; /* grey-blue */
+  --second-color: #4F5D75; /* grey one */
+  --third-color: #BFC0C0; /* grey two */
+  --fourth-color: #FFFFFF; /* white */
+  --fifth-color: #EF8354; /* orange */
 }
 
 body {
@@ -53,7 +53,7 @@ nav ul,
 aside ul {
   margin-top: 2.5em;
 }
-aside ul {
+aside ul:nth-child(2) {
   margin-top: 9em;
 }
 nav a,
@@ -129,6 +129,22 @@ nav a.active li {
   color: var(--first-color);
 }
 
+/*  */
+#forecast {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  padding-left: 1em;
+}
+#forecast li {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--second-color);
+  padding: .5em;
+}
+
+
+
 
 /* BIG IMAGE SECTION */
 
@@ -155,7 +171,7 @@ nav a.active li {
   align-self: center;
   text-align: center;
   margin-bottom: 15em;
-  background-color: var(--second-color);
+  background-color: var(--first-color);
   box-shadow: 10px 10px var(--fourth-color);
 }
 .firstView-intro img {
@@ -181,9 +197,11 @@ h1 {
   position: absolute;
   top: 2em;
   right: 8.5em;
-  width: 200px;
-  height: 130px;
-  background-color: var(--third-color);
+  width: auto;
+  max-width: 400px;
+  height: auto;
+  max-height: 200px;
+  background-color: var(--fifth-color);
   color: var(--first-color);
   padding: 1.8em;
   box-sizing: border-box;
@@ -192,8 +210,9 @@ h1 {
 }
 #alert img {
   position: absolute;
-  top: .5em;
-  right: .7em;
+  top: 1em;
+  right: 1em;
+  width: 20px;
 }
 
 
@@ -252,6 +271,11 @@ h2 {
   cursor: pointer;
 }
 
+.introduction button:hover {
+  transform: translate(10px, 10px);
+  box-shadow: none;
+}
+
 
 
 /* FOOTER */
@@ -287,6 +311,9 @@ footer a {
   font-weight: 500;
   margin-left: .5em;
   font-family: 'Dosis', sans-serif;
+}
+footer a:hover {
+  color: var(--third-color);
 }
 footer .social {
   margin-top: 2em;

@@ -16,8 +16,9 @@
   <div class="alert"></div>
 
   <header>
-    <div id="alert" onclick="closeNote()">Attention! More sunny and hot days ahead
-      <img src="images/icon-exit-grey.png">
+    <div id="alert" onclick="closeNote()">
+      <div id="alert-message"></div>
+      <img src="images/icon-exit.png">
     </div>
     <nav id="left-block">
       <div class="nav-icons">
@@ -32,16 +33,16 @@
         <a href="index.html" class="active">
           <li>Home</li>
         </a>
-        <a href="#">
+        <a href="html/city.html">
           <li>City</li>
         </a>
-        <a href="#">
+        <a href="html/join.html">
           <li>Join</li>
         </a>
-        <a href="#">
+        <a href="html/directory.html">
           <li>Directory</li>
         </a>
-        <a href="#">
+        <a href="html/contact.html">
           <li>Contact</li>
         </a>
       </ul>
@@ -52,15 +53,12 @@
         <img src="images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-temp" onclick="closeTempBlock()">
       </div>
       <ul>
-        <li>Current condition - <span>cloudy</span></li>
-        <li>Current temperature <span>37C</span></li>
-        <li>Humidity <span>98%</span></li>
+        <li>Now: <span id="description"></span></li>
+        <li>Temperature <span id="airTemperature"></span></li>
+        <li>Humidity <span id="humidity"></span></li>
       </ul>
       <h3>Three day forecast</h3>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul id="forecast">
       </ul>
     </aside>
   </header>
@@ -91,15 +89,18 @@
       </div>
     </section>
     <section class="introduction">
-      <p>A description of the purpose of the chamber and its goals... Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, unde! Ratione suscipit non, esse, enim eveniet ipsum repellendus, voluptas mollitia aut fugiat consequatur! Soluta amet debitis, repellendus ab adipisci quod? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et reprehenderit soluta ex possimus deserunt. Provident quo dolores nulla voluptates voluptatum ratione aliquam assumenda debitis, beatae nam facere quidem. Asperiores, at? Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero vitae debitis nemo amet optio </p>
+      <p>
+        Welcome to the Älvsjö Chamber of Commerce!<br>Since 1992, we have promote the business interests of the members of the organization and promote the area, attracting additional business and people to our district.
+        Chamber membership provides a networking and knowledge sharing platform for members of the district business community to meet, connect, and learn. To that end we host numerous activities at which members can connect with other executives, business leaders, and government officials. Membership also provides an effective way to expose employees to the international business community, thus enhancing their professional development. 
+      </p>
       <button onclick="location.href='html/join.html'">Join the Chamber</button>
     </section>
     <section class="events">
       <h2>Future events</h2>
       <ul>
-        <li>First Event</li>
-        <li>Second Event</li>
-        <li>Third Event</li>
+        <li>July 29: New Covid Instructions</li>
+        <li>August 16: Annual Conference</li>
+        <li>October 1: Octoberfest</li>
       </ul>
     </section>
   </main>
@@ -128,8 +129,11 @@
       <a href="https://start.stockholm/hitta-medborgarkontor/medborgarkontor/medborgarkontoret-i-alvsjo/">
         <span>Medborgarkontoret&nbsp;i&nbsp;Älvsjö&nbsp;|</span>
       </a>
-      <a href="#">
-        <span>Weather&nbsp;website</span>
+      <a href="https://openweathermap.org/api/one-call-api">
+        <span>OpenWeather&nbsp;|</span>
+      </a>
+      <a href="https://opendata.smhi.se/apidocs/warnings/api.html">
+        <span>SMHI&nbsp;Open&nbsp;Data</span>
       </a>
       <span></span>
     </div>
@@ -137,6 +141,8 @@
 
 
   <script src="js/toggleMenu.js"></script>
+  <script src="js/weatherAPI.js"></script>
+  <script src="js/events.js"></script>
   <!-- <script src="js/time.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -150,15 +156,17 @@
 
 
 <!-- 
+alt...
+переделать схему и план
+оптимизация фотографий
 
-  заполнить текст 
-  ссылка на сайт погоды
 
   js для погоды (2)
+
   js для событий
   js для года
 
 
-  переделать схему и план
+ 
 
 -->

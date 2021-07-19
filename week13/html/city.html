@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-slace=1.0">
+  <meta name="description" content="WDD230 course: Chamber of Commerce. Maria Semenyuk. BYUI">
+  <link rel="shortcut icon" href="icon-favicon.ico" type="image/x-icon">
+  <title>Home Page</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="alert"></div>
+
+  <header>
+    <div id="alert" onclick="closeNote()">
+      <div id="alert-message"></div>
+      <img src="images/icon-exit.png">
+    </div>
+    <nav id="left-block">
+      <div class="nav-icons">
+        <img src="images/icon-menu.png" onclick="openMenu()" id="icon-menu">
+        <img src="images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-menu" onclick="closeMenu()">
+      </div>
+      <div class="logo-block">
+        <img src="images/logo-white.png">
+        <div>Älvsjö</div>
+      </div>
+      <ul>
+        <a href="index.html" class="active">
+          <li>Home</li>
+        </a>
+        <a href="html/city.html">
+          <li>City</li>
+        </a>
+        <a href="html/join.html">
+          <li>Join</li>
+        </a>
+        <a href="html/directory.html">
+          <li>Directory</li>
+        </a>
+        <a href="html/contact.html">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </nav>
+    <aside id="right-block">
+      <div class="nav-icons">
+        <img src="images/icon-temperature.png" id="icon-temp" onclick="openTempBlock()"> <!-- class left-side-icon-->
+        <img src="images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-temp" onclick="closeTempBlock()">
+      </div>
+      <ul>
+        <li>Now: <span id="description"></span></li>
+        <li>Temperature <span id="airTemperature"></span></li>
+        <li>Humidity <span id="humidity"></span></li>
+      </ul>
+      <h3>Three day forecast</h3>
+      <ul id="forecast">
+      </ul>
+    </aside>
+  </header>
+
+  <div class="firstView">
+    <img src="images/alvsjo-torg-1070-2560x1707.webp" class="engagingImage">
+    <div class="firstView-intro">
+      <a href="#">
+        <img src="images/logo-white.png">
+      </a>
+      <h1>Älvsjö</h1>
+    </div>
+  </div>
+
+  <main>
+    <section class="advertisement">
+      <h2>Best salers in June</h2>
+      <div>
+        <a href="https://ligula.se/en/motel-l/alvsjo/">
+          <img src="images/company-1.png">
+        </a>
+        <a href="https://direkten.se/butik/alvsjo/">
+          <img src="images/company-2.png">
+        </a>
+        <a href="https://alvsjotandvard.se/">
+          <img src="images/company-3.png">
+        </a>
+      </div>
+    </section>
+    <section class="introduction">
+      <p>
+        Welcome to the Älvsjö Chamber of Commerce!<br>Since 1992, we have promote the business interests of the members of the organization and promote the area, attracting additional business and people to our district.
+        Chamber membership provides a networking and knowledge sharing platform for members of the district business community to meet, connect, and learn. To that end we host numerous activities at which members can connect with other executives, business leaders, and government officials. Membership also provides an effective way to expose employees to the international business community, thus enhancing their professional development. 
+      </p>
+      <button onclick="location.href='html/join.html'">Join the Chamber</button>
+    </section>
+    <section class="events">
+      <h2>Future events</h2>
+      <ul>
+        <li>July 29: New Covid Instructions</li>
+        <li>August 16: Annual Conference</li>
+        <li>October 1: Octoberfest</li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <div>
+      <div class="contacts">
+        <h3>Contact information</h3>
+        <div>Älvsjö, Stationsgata 21</div>
+        <div>08-508 21 050</div>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com" target="_blank">
+          <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <span>&copy; 2021,&nbsp;Maria&nbsp;Semenyuk&nbsp;|</span>
+      <a href="https://www.byui.edu/online">
+        <span>BYUI-online&nbsp;|</span>
+      </a>
+      <a href="https://start.stockholm/hitta-medborgarkontor/medborgarkontor/medborgarkontoret-i-alvsjo/">
+        <span>Medborgarkontoret&nbsp;i&nbsp;Älvsjö&nbsp;|</span>
+      </a>
+      <a href="https://openweathermap.org/api/one-call-api">
+        <span>OpenWeather&nbsp;|</span>
+      </a>
+      <a href="https://opendata.smhi.se/apidocs/warnings/api.html">
+        <span>SMHI&nbsp;Open&nbsp;Data</span>
+      </a>
+      <span></span>
+    </div>
+  </footer>
+
+
+  <script src="js/toggleMenu.js"></script>
+  <script src="js/weatherAPI.js"></script>
+  <script src="js/events.js"></script>
+  <!-- <script src="js/time.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fonts.js"></script>
+
+  <script src="js/json-towns.js"></script> -->
+</body>
+</html>
+
+
+
+
+
+<!-- 
+  📄 The City (use the actual city name) page provides historical and current demographic 
+  information about the city. Use current imagery and include current city events.  
+  Promote your city through any other creative method of content you determine would be effective.
+ -->
