@@ -5,52 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-slace=1.0">
   <meta name="description" content="WDD230 course: Chamber of Commerce. Maria Semenyuk. BYUI">
   <link rel="shortcut icon" href="icon-favicon.ico" type="image/x-icon">
-  <title>Home Page</title>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/small.css" rel="stylesheet">
-  <link href="css/medium.css" rel="stylesheet">
-  <link href="css/large.css" rel="stylesheet">
+  <title>City</title>
+  <link href="../css/normalize.css" rel="stylesheet">
+  <link href="../css/small.css" rel="stylesheet">
+  <link href="../css/medium.css" rel="stylesheet">
+  <link href="../css/large.css" rel="stylesheet">
 </head>
 <body>
 
-  <div class="alert"></div>
-
   <header>
-    <div id="alert" onclick="closeNote()">
-      <div id="alert-message"></div>
-      <img src="images/icon-exit.png">
-    </div>
     <nav id="left-block">
       <div class="nav-icons">
-        <img src="images/icon-menu.png" onclick="openMenu()" id="icon-menu">
-        <img src="images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-menu" onclick="closeMenu()">
+        <img src="../images/icon-menu.png" onclick="openMenu()" id="icon-menu">
+        <img src="../images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-menu" onclick="closeMenu()">
       </div>
       <div class="logo-block">
-        <img src="images/logo-white.png">
+        <a href="../index.html">
+          <img src="../images/logo-white.png">
+        </a>
         <div>Älvsjö</div>
       </div>
       <ul>
-        <a href="index.html" class="active">
+        <a href="../index.html">
           <li>Home</li>
         </a>
-        <a href="html/city.html">
+        <a href="city.html" class="active">
           <li>City</li>
         </a>
-        <a href="html/join.html">
+        <a href="join.html">
           <li>Join</li>
         </a>
-        <a href="html/directory.html">
+        <a href="directory.html">
           <li>Directory</li>
         </a>
-        <a href="html/contact.html">
+        <a href="contact.html">
           <li>Contact</li>
         </a>
       </ul>
     </nav>
     <aside id="right-block">
       <div class="nav-icons">
-        <img src="images/icon-temperature.png" id="icon-temp" onclick="openTempBlock()"> <!-- class left-side-icon-->
-        <img src="images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-temp" onclick="closeTempBlock()">
+        <img src="../images/icon-temperature.png" id="icon-temp" onclick="openTempBlock()"> <!-- class left-side-icon-->
+        <img src="../images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-temp" onclick="closeTempBlock()">
       </div>
       <ul>
         <li>Now: <span id="description"></span></li>
@@ -63,38 +59,43 @@
     </aside>
   </header>
 
-  <div class="firstView">
-    <img src="images/alvsjo-torg-1070-2560x1707.webp" class="engagingImage">
-    <div class="firstView-intro">
-      <a href="#">
-        <img src="images/logo-white.png">
-      </a>
-      <h1>Älvsjö</h1>
-    </div>
-  </div>
 
-  <main>
-    <section class="advertisement">
-      <h2>Best salers in June</h2>
-      <div>
-        <a href="https://ligula.se/en/motel-l/alvsjo/">
-          <img src="images/company-1.png">
-        </a>
-        <a href="https://direkten.se/butik/alvsjo/">
-          <img src="images/company-2.png">
-        </a>
-        <a href="https://alvsjotandvard.se/">
-          <img src="images/company-3.png">
-        </a>
-      </div>
-    </section>
-    <section class="introduction">
-      <p>
-        Welcome to the Älvsjö Chamber of Commerce!<br>Since 1992, we have promote the business interests of the members of the organization and promote the area, attracting additional business and people to our district.
-        Chamber membership provides a networking and knowledge sharing platform for members of the district business community to meet, connect, and learn. To that end we host numerous activities at which members can connect with other executives, business leaders, and government officials. Membership also provides an effective way to expose employees to the international business community, thus enhancing their professional development. 
-      </p>
-      <button onclick="location.href='html/join.html'">Join the Chamber</button>
-    </section>
+  <main class="city secondary-page">
+    <h1>Stockholm, <br>Älvsjö district</h1>
+    <p>
+      is a district of the city of Stockholm Municipality in Sweden, located in the borough Älvsjö in Söderort. It has the biggest rentable facility in northern Europe called Stockholm International Fairs, and also the hotel Rica Talk Hotel, which both are located east of Älvsjö commuter train station. In 2017, the total population of the district was 1,530 inhabitants.
+      <br>
+      The name was written Elffuesio in 1461. The origin of the first element is unclear – it is possibly derived from an Old Swedish male name *Ælve, but that interpretation is uncertain. The last element sjö 'lake' refers to Brännkyrkasjön, a former lake east of Älvsjö.
+      <a href="https://en.wikipedia.org/wiki/Älvsjö">sourse</a>
+    </p>
+    <ul class="gallery">
+      <li>
+        <div>1892 Älvsjö station: great legacy</div>
+        <img src="../images/gallery-1-1.jpeg">
+        <img src="../images/gallery-1-2.jpeg">
+      </li>
+      <li>
+        <div>Älvsjö station today: large transport hub</div>
+        <img src="../images/gallery-2-1.jpeg">
+        <img src="../images/gallery-2-2.jpeg">
+      </li>
+      <li>
+        <div>Stockholm International Fairs: fairs are held here</div>
+        <img src="../images/gallery-3-1.png">
+        <img src="../images/gallery-3-2.jpeg">
+      </li>
+      <li>
+        <div>Motel L: popular stopover</div>
+        <img src="../images/gallery-4-1.jpeg">
+        <img src="../images/gallery-4-2.jpeg">
+      </li>
+      <li>
+        <div>Centrum: large square for events</div>
+        <img src="../images/gallery-5-1.png">
+        <img src="../images/gallery-5-2.jpeg">
+      </li>
+    </ul>
+
     <section class="events">
       <h2>Future events</h2>
       <ul>
@@ -105,6 +106,7 @@
     </section>
   </main>
   
+
   <footer>
     <div>
       <div class="contacts">
@@ -135,20 +137,13 @@
       <a href="https://opendata.smhi.se/apidocs/warnings/api.html">
         <span>SMHI&nbsp;Open&nbsp;Data</span>
       </a>
-      <span></span>
     </div>
   </footer>
 
 
-  <script src="js/toggleMenu.js"></script>
-  <script src="js/weatherAPI.js"></script>
-  <script src="js/events.js"></script>
-  <!-- <script src="js/time.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script src="js/fonts.js"></script>
-
-  <script src="js/json-towns.js"></script> -->
+  <script src="../js/toggleMenu.js"></script>
+  <script src="../js/weatherAPI.js"></script>
+  <script src="../js/events.js"></script>
 </body>
 </html>
 
@@ -157,7 +152,7 @@
 
 
 <!-- 
-  📄 The City (use the actual city name) page provides historical and current demographic 
-  information about the city. Use current imagery and include current city events.  
+
+
   Promote your city through any other creative method of content you determine would be effective.
  -->
