@@ -9,4 +9,17 @@
   footer > div {
     width: 60%;
   }
+
+  main.directory > div {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media all and (min-width: 501px) {
+  aside {
+    display: block;
+  }
+  #alert {
+    right: 8.5em;
+    max-width: 400px;
 }

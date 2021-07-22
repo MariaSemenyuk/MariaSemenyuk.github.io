@@ -34,3 +34,15 @@ function closeTempBlock() {
 function closeNote() {
   noteBlock.style.display = "none";
 }
+
+
+
+// TOGGLE-BUTTONS DIRECTORY
+let companies = document.getElementById('membersList');
+
+function toggleRow() {
+  companies.style.gridTemplateColumns = 'repeat(3, auto)';
+}
+function toggleColumn() {
+  companies.style.gridTemplateColumns = '1fr';
+}

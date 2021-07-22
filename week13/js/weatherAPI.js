@@ -22,7 +22,7 @@ fetch(weatherJSON)
     return response.json();
   })
   .then(function (jsObject) {
-    console.table(jsObject);
+    // console.table(jsObject);
     const daysNames = ['Sun', 'Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat'];
     const today = new Date();
 
@@ -56,7 +56,7 @@ fetch(weatherJSON)
     return response.json();
   })
   .then(function (jsObject) {
-    console.table(jsObject);
+    // console.table(jsObject);
     const alerts = jsObject.alert;
 
     alerts.forEach(element => {

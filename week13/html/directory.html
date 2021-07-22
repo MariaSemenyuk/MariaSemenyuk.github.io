@@ -1,12 +1,197 @@
-<!-- 
-  📄 The Directory page provides a list of local business organizations that are actual, 
-  local businesses in your area. There should be at least 7 businesses listed. Include contact 
-  information, logos (if available), and actual web links (if available). The content build must
-   be driven from a JSON data source of your own making. You can store this .json file in another 
-   📁folder on your site. Display the directory as a grid of business 'cards'
-Example buttons for grid and list view. For full credit consideration, this directory should have two 
-buttons to display the cards either in a "grid view" (cards in multiple columns) or in a "list view" 
-(a single column) for medium and larger views. This does not mean you need to change the layout structure, 
-just the CSS when a button selection is made. The image provided here is just an example of what the buttons 
-might look like in general.
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-slace=1.0">
+  <meta name="description" content="WDD230 course: Chamber of Commerce. Maria Semenyuk. BYUI">
+  <link rel="shortcut icon" href="../images/icon-favicon.png" type="image/x-icon">
+  <title>Contact</title>
+  <link href="../css/normalize.css" rel="stylesheet">
+  <link href="../css/small.css" rel="stylesheet">
+  <link href="../css/medium.css" rel="stylesheet">
+  <link href="../css/large.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav id="left-block">
+        <div class="nav-icons">
+        <img src="../images/icon-menu.png" onclick="openMenu()" id="icon-menu" alt="menu button for openning">
+        <img src="../images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-menu" onclick="closeMenu()" alt="menu button for closing">
+        </div>
+        <div class="logo-block">
+          <a href="../index.html">
+              <img src="../images/logo-white.png" alt="district logo small">
+          </a>
+          <div>Älvsjö</div>
+        </div>
+        <ul>
+          <a href="../index.html">
+              <li>Home</li>
+          </a>
+          <a href="city.html">
+              <li>City</li>
+          </a>
+          <a href="join.html">
+              <li>Join</li>
+          </a>
+          <a href="directory.html" class="active">
+              <li>Directory</li>
+          </a>
+          <a href="contact.html">
+              <li>Contact</li>
+          </a>
+        </ul>
+    </nav>
+    <aside id="right-block">
+        <div class="nav-icons">
+          <img src="../images/icon-temperature.png" id="icon-temp" onclick="openTempBlock()" alt="weather button for openning"> <!-- class left-side-icon-->
+          <img src="../images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-temp" onclick="closeTempBlock()" alt="weather button for closing">
+        </div>
+        <ul>
+          <li>Now: <span id="description"></span></li>
+          <li>Temperature <span id="airTemperature"></span></li>
+          <li>Humidity <span id="humidity"></span></li>
+        </ul>
+        <h3>Three day forecast</h3>
+        <ul id="forecast">
+        </ul>
+    </aside>
+  </header>
+
+
+  <main class="directory secondary-page advertisement">
+    <h1>A list of&nbsp;Chamber members</h1>
+    <span class="directory-toggle">
+      <img src="../images/icon-1.png" onclick="toggleRow()" alt="toggle button row">
+      <img src="../images/icon-2.png" onclick="toggleColumn()" alt="toggle button column">
+    </span>
+    <div id="membersList">
+      <!-- <div>
+        <a href="https://ligula.se/en/motel-l/alvsjo/" target="_blank">
+          <img src="../images/company-1.png" alt="motel l logo">
+        </a>
+        <p>Götalandsvägen 209</p>
+      </div>
+      <div>
+        <a href="https://direkten.se/butik/alvsjo/" target="_blank">
+          <img src="../images/company-2.png" alt="direkten logo">
+        </a>
+        <p>Armborstvägen 9</p>
+      </div>
+      <div>
+        <a href="https://alvsjotandvard.se/" target="_blank">
+          <img src="../images/company-3.png" alt="alvsjotandvard logo">
+        </a>
+        <p>Prästgårdsgränd 4</p>
+      </div>
+      <div>
+        <a href="https://vardcentraler.sll.se/hitta-vardcentral/alvsjo/" target="_blank">
+          <img src="../images/company-4.png" alt="vardcentraler logo">
+        </a>
+        <p>Solberga hagväg 1</p>
+      </div>
+      <div>
+        <a href="https://flyttfirman4ess.se/" target="_blank">
+          <img src="../images/company-5.png" alt="flyttfirman4ess logo">
+        </a>
+        <p>Götalandsvägen 216</p>
+      </div>
+      <div>
+        <a href="https://www.bokadirekt.se/places/julash-19471" target="_blank">
+          <img src="../images/company-6.jpeg" alt="bokadirekt logo">
+        </a>
+        <p>Götalandsvägen 215</p>
+      </div>
+      <div>
+        <a href="https://www.alvsjofrisor.se/" target="_blank">
+          <img src="../images/company-7.png" alt="alvsjofrisor logo">
+        </a>
+        <p>Götalandsvägen 225</p>
+      </div>
+      <div>
+        <a href="https://www.coop.se/016125" target="_blank">
+          <img src="../images/company-8.png" alt="coop logo">
+        </a>
+        <p>Älvsjövägen 4</p>
+      </div>
+      <div>
+        <a href="https://restaurants.subway.com/sweden/stockholm/alvsjotorg-13b" target="_blank">
+          <img src="../images/company-9.png" alt="subway logo">
+        </a>
+        <p>Älvsjö Torg 13B</p>
+      </div>
+      <div>
+        <a href="http://www.asahisushi.se/meny-asaiwokalvsjo.html" target="_blank">
+          <img src="../images/company-10.png" alt="asahisushi logo">
+        </a>
+        <p>Älvsjövägen 15A</p>
+      </div>
+      <div>
+        <a href="http://www.thelinskonditori.se/" target="_blank">
+          <img src="../images/company-11.png" alt="thelinskonditori logo">
+        </a>
+        <p>Johan Skyttes Väg 185</p>
+      </div>
+      <div>
+        <a href="https://se.fitness24seven.com/vara-gym/se-vara-gym/alvsjo-stationsplan" target="_blank">
+          <img src="../images/company-12.png" target="_blank" alt="fitness24seven logo">
+        </a>
+        <p>Johan Skyttes Väg 190</p>
+      </div> -->
+    </div>
+  </main>
+  
+
+  <footer>
+    <div>
+      <div class="contacts">
+        <h3>Contact information</h3>
+        <div>Älvsjö, Stationsgata 21</div>
+        <div>08-508 21 050</div>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com" target="_blank">
+          <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <span>&copy;<span class="year"></span>&nbsp;Maria&nbsp;Semenyuk&nbsp;|</span>
+      <a href="https://www.byui.edu/online" target="_blank">
+        <span>BYUI-online&nbsp;|</span>
+      </a>
+      <a href="https://start.stockholm/hitta-medborgarkontor/medborgarkontor/medborgarkontoret-i-alvsjo/" target="_blank">
+        <span>Medborgarkontoret&nbsp;i&nbsp;Älvsjö&nbsp;|</span>
+      </a>
+      <a href="https://openweathermap.org/api/one-call-api" target="_blank">
+        <span>OpenWeather&nbsp;|</span>
+      </a>
+      <a href="https://opendata.smhi.se/apidocs/warnings/api.html" target="_blank">
+        <span>SMHI&nbsp;Open&nbsp;Data&nbsp;|</span>
+      </a>
+      <span>Last modified date: <span class="modifiedTime"></span></span>
+    </div>
+  </footer>
+
+
+  <script src="../js/toggleMenu.js"></script>
+  <script src="../js/weatherAPI.js"></script>
+  <script src="../js/events.js"></script>
+  <script src="../js/time.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="../js/fonts.js"></script>
+</body>
+</html>
+
+
+
+
+ 
+ <!-- 
+   json and js
  -->

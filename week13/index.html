@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-slace=1.0">
   <meta name="description" content="WDD230 course: Chamber of Commerce. Maria Semenyuk. BYUI">
-  <link rel="shortcut icon" href="icon-favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/icon-favicon.ico" type="image/x-icon">
   <title>Home Page</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/small.css" rel="stylesheet">
@@ -20,12 +20,12 @@
     </div>
     <nav id="left-block">
       <div class="nav-icons">
-        <img src="images/icon-menu.png" onclick="openMenu()" id="icon-menu">
-        <img src="images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-menu" onclick="closeMenu()">
+        <img src="images/icon-menu.png" onclick="openMenu()" id="icon-menu" alt="menu button for openning">
+        <img src="images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-menu" onclick="closeMenu()" alt="menu button for closing">
       </div>
       <div class="logo-block">
         <a href="index.html">
-          <img src="images/logo-white.png">
+          <img src="images/logo-white.png" alt="district logo small">
         </a>
         <div>Älvsjö</div>
       </div>
@@ -49,8 +49,8 @@
     </nav>
     <aside id="right-block">
       <div class="nav-icons">
-        <img src="images/icon-temperature.png" id="icon-temp" onclick="openTempBlock()"> <!-- class left-side-icon-->
-        <img src="images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-temp" onclick="closeTempBlock()">
+        <img src="images/icon-temperature.png" id="icon-temp" onclick="openTempBlock()" alt="weather button for openning"> <!-- class left-side-icon-->
+        <img src="images/icon-exit.png" class="left-side-icon icon-exit" id="icon-exit-temp" onclick="closeTempBlock()" alt="weather button for closing">
       </div>
       <ul>
         <li>Now: <span id="description"></span></li>
@@ -64,9 +64,9 @@
   </header>
 
   <div class="firstView">
-    <img src="images/alvsjo-torg-1070-2560x1707.webp" class="engagingImage">
+    <img src="images/alvsjo-torg-1070-2560x1707.webp" class="engagingImage" alt="Älvsjö square">
     <div class="firstView-intro">
-      <img src="images/logo-white.png">
+      <img src="images/logo-white.png" alt="district logo">
       <h1>Älvsjö</h1>
     </div>
   </div>
@@ -75,14 +75,14 @@
     <section class="advertisement">
       <h2>Best salers in June</h2>
       <div>
-        <a href="https://ligula.se/en/motel-l/alvsjo/">
-          <img src="images/company-1.png">
+        <a href="https://ligula.se/en/motel-l/alvsjo/" target="_blank">
+          <img src="images/company-1.png" alt="motel-l logo">
         </a>
-        <a href="https://direkten.se/butik/alvsjo/">
-          <img src="images/company-2.png">
+        <a href="https://direkten.se/butik/alvsjo/" target="_blank">
+          <img src="images/company-2.png" alt="directen logo">
         </a>
-        <a href="https://alvsjotandvard.se/">
-          <img src="images/company-3.png">
+        <a href="https://alvsjotandvard.se/" target="_blank">
+          <img src="images/company-3.png" alt="tandvard logo">
         </a>
       </div>
     </section>
@@ -120,19 +120,20 @@
       </div>
     </div>
     <div>
-      <span>&copy; 2021,&nbsp;Maria&nbsp;Semenyuk&nbsp;|</span>
-      <a href="https://www.byui.edu/online">
+      <span>&copy;<span class="year"></span>&nbsp;Maria&nbsp;Semenyuk&nbsp;|</span>
+      <a href="https://www.byui.edu/online" target="_blank">
         <span>BYUI-online&nbsp;|</span>
       </a>
-      <a href="https://start.stockholm/hitta-medborgarkontor/medborgarkontor/medborgarkontoret-i-alvsjo/">
+      <a href="https://start.stockholm/hitta-medborgarkontor/medborgarkontor/medborgarkontoret-i-alvsjo/" target="_blank">
         <span>Medborgarkontoret&nbsp;i&nbsp;Älvsjö&nbsp;|</span>
       </a>
-      <a href="https://openweathermap.org/api/one-call-api">
+      <a href="https://openweathermap.org/api/one-call-api" target="_blank">
         <span>OpenWeather&nbsp;|</span>
       </a>
-      <a href="https://opendata.smhi.se/apidocs/warnings/api.html">
-        <span>SMHI&nbsp;Open&nbsp;Data</span>
+      <a href="https://opendata.smhi.se/apidocs/warnings/api.html" target="_blank">
+        <span>SMHI&nbsp;Open&nbsp;Data&nbsp;|</span>
       </a>
+      <span>Last modified date: <span class="modifiedTime"></span></span>
     </div>
   </footer>
 
@@ -140,28 +141,18 @@
   <script src="js/toggleMenu.js"></script>
   <script src="js/weatherAPI.js"></script>
   <script src="js/events.js"></script>
-  <!-- <script src="js/time.js"></script>
-
+  <script src="js/time.js"></script>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/fonts.js"></script>
- -->
 </body>
 </html>
 
 
 
 
-<!-- 
-alt...
-переделать схему и план
+<!--
+
 оптимизация фотографий
-
-
-
-  js для года
-  js для шрифта
-
- 
-
-  починить мобильное отображение
+ошибки в консоле
 -->

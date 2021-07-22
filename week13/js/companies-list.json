@@ -1,0 +1,77 @@
+{
+  "companies": [
+    {
+      "businessName": "Motel L",
+      "businessAddres": "Götalandsvägen 209",
+      "businessWebsite": "https://ligula.se/en/motel-l/alvsjo/",
+      "logo": "../images/company-1.png"
+    },
+    {
+      "businessName": "Direkten",
+      "businessAddres": "Armborstvägen 9",
+      "businessWebsite": "https://direkten.se/butik/alvsjo/",
+      "logo": "../images/company-2.png"
+    },
+    {
+      "businessName": "ÄlvsjöTandvard",
+      "businessAddres": "Prästgårdsgränd 4",
+      "businessWebsite": "https://alvsjotandvard.se/",
+      "logo": "../images/company-3.png"
+    },
+    {
+      "businessName": "VardCentraler",
+      "businessAddres": "Solberga hagväg 1",
+      "businessWebsite": "https://vardcentraler.sll.se/hitta-vardcentral/alvsjo/",
+      "logo": "../images/company-4.png"
+    },
+    {
+      "businessName": "Flyttfirman4ess",
+      "businessAddres": "Götalandsvägen 216",
+      "businessWebsite": "https://flyttfirman4ess.se/",
+      "logo": "../images/company-5.png"
+    },
+    {
+      "businessName": "Bokadirekt",
+      "businessAddres": "Götalandsvägen 215",
+      "businessWebsite": "https://www.bokadirekt.se/places/julash-19471",
+      "logo": "../images/company-6.jpeg"
+    },
+    {
+      "businessName": "ÄlvsjöFrisor",
+      "businessAddres": "Götalandsvägen 225",
+      "businessWebsite": "https://www.alvsjofrisor.se/",
+      "logo": "../images/company-7.png"
+    },
+    {
+      "businessName": "Coop",
+      "businessAddres": "Älvsjövägen 4",
+      "businessWebsite": "https://www.coop.se/016125",
+      "logo": "../images/company-8.png"
+    },
+    {
+      "businessName": "SubWay",
+      "businessAddres": "Älvsjö Torg 13B",
+      "businessWebsite": "https://restaurants.subway.com/sweden/stockholm/alvsjotorg-13b",
+      "logo": "../images/company-9.png"
+    },
+    {
+      "businessName": "SsahiSushi",
+      "businessAddres": "Älvsjövägen 15A",
+      "businessWebsite": "http://www.asahisushi.se/meny-asaiwokalvsjo.html",
+      "logo": "../images/company-10.png"
+    },
+    {
+      "businessName": "TheLinsKonditori",
+      "businessAddres": "Johan Skyttes Väg 185",
+      "businessWebsite": "http://www.thelinskonditori.se/",
+      "logo": "../images/company-11.png"
+    },
+    {
+      "businessName": "Fitness24seven",
+      "businessAddres": "Johan Skyttes Väg 190",
+      "businessWebsite": "https://se.fitness24seven.com/vara-gym/se-vara-gym/alvsjo-stationsplan",
+      "logo": "../images/company-12.png"
+    }
+  ]
+
+}

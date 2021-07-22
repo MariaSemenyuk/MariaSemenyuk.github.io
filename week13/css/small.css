@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
-/* font-family: 'Dosis', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap');
-/* font-family: 'Noto Sans SC', sans-serif; */
-
-
-
 /* BASE */
 
 :root {
@@ -46,6 +39,7 @@ aside {
   right: 0;
   top: 0;
   transform: translateX(500px);
+  display: none;
 }
 nav ul,
 aside ul {
@@ -194,9 +188,9 @@ h1 {
 #alert {
   position: absolute;
   top: 2em;
-  right: 8.5em;
+  right: -2.4em;
   width: auto;
-  max-width: 400px;
+  max-width: 350px;
   height: auto;
   max-height: 200px;
   background-color: var(--fifth-color);
@@ -234,11 +228,11 @@ h2 {
   color: var(--first-color);
 }
 
-.advertisement div {
+.advertisement > div {
   display: flex;
 }
 
-.advertisement img {
+.advertisement div img {
   width: 91%;
   box-shadow: 10px 10px var(--third-color);
   margin-right: 20px;
@@ -254,7 +248,8 @@ h2 {
   line-height: 2em;
 }
 
-.introduction button {
+.introduction button,
+input.submitButton {
   outline: none;
   width: 100%;
   height: 2.6em;
@@ -269,7 +264,8 @@ h2 {
   cursor: pointer;
 }
 
-.introduction button:hover {
+.introduction button:hover,
+input.submitButton:hover {
   transform: translate(10px, 10px);
   box-shadow: none;
 }
@@ -331,6 +327,9 @@ footer .fa-w-14 {
 
 /* NEXT PAGES */
 
+
+/* BASE */
+
 .secondary-page h1 {
   color: var(--fifth-color);
   padding-top: 2em;
@@ -338,17 +337,47 @@ footer .fa-w-14 {
 }
 
 .secondary-page p,
-.secondary-page li {
-  font-size: 1.3em;
+.secondary-page li,
+.secondary-page label,
+.secondary-page fieldset {
   font-family: 'Noto Sans SC', sans-serif;
   font-weight: 300;
   letter-spacing: .7px;
   line-height: 2em;
 }
-.secondary-page p a,
-.secondary-page li a {
-  color: var(--third-color);
+.secondary-page p,
+.secondary-page li,
+.secondary-page fieldset {
+  font-size: 1.3em;
 }
+/* .secondary-page p a,
+.secondary-page li a { */
+.sourse {
+  color: var(--third-color);
+  font-size: .6em;
+}
+.secondary-page label {
+  font-size: .8em;
+  margin: .8em 0;
+  display: flex;
+  flex-direction: column;
+}
+.secondary-page fieldset {
+  margin-top: 2em;
+}
+input::placeholder,
+textarea::placeholder,
+select {
+  color: var(--third-color);
+  padding: .15em;
+}
+input,
+textarea {
+  color: var(--first-color);
+}
+
+
+/* city */
 
 .city ul {
   margin-top: 3em;
@@ -359,9 +388,8 @@ footer .fa-w-14 {
   color: var(--first-color);
   width: 100%;
   margin-bottom: 2em;
-  padding: 2em 1.5em;
   list-style: none;
-  padding: 1.5em;
+  padding: 1.3em;
 }
 .city .events li:hover {
   background-color: var(--second-color);
@@ -374,4 +402,82 @@ footer .fa-w-14 {
 
 .city h2 {
   margin-top: 2em;
+}
+
+
+
+/* join */
+
+.table-levels {
+  display: flex;
+  justify-content: stretch;
+}
+.join ul {
+  list-style: none;
+  padding-left: 0;
+}
+.join li {
+  border-bottom: 1px solid var(--third-color);
+  padding: .5em .3em;
+}
+
+
+
+
+/* thank */
+
+footer.thank {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+
+
+/* directory */
+
+main.directory > div {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  margin-bottom: 5em;
+}
+main.directory > div > div {
+  margin-bottom: 2em;
+}
+main.directory p {
+  font-size: .8em;
+}
+.directory span img {
+  width: 30px;
+  margin-bottom: 1.5em;
+}
+
+form {
+  margin-bottom: 4em;
+}
+.directory-toggle {
+  display: none;
+}
+
+
+
+/* contact */
+
+.contact > div {
+  display: flex;
+}
+.contact img {
+  width: 100%;
+}
+.contact > div > div {
+  margin-right: 1em;
+}
+iframe {
+  margin: 2em 0 4.5em 0;
+}
+.contact h2 {
+  margin: 1.9em 0 .3em 0;
+}
+.contact p {
+  margin: 0;
 }

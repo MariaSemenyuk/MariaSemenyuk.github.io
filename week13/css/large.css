@@ -14,8 +14,12 @@
     display: inline;
     width: calc(100%/2 - 0.2em);
   }
+
+  .directory-toggle {
+    display: block;
+  }
+
+  main.directory > div {
+    grid-template-columns: repeat(3, auto);
+  }
 }
-
-/* @media all and (min-width: 620px) {
-
-} */
