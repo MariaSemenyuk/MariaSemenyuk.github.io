@@ -52,12 +52,13 @@ nav a,
 aside a {
   text-decoration: none;
 }
-nav a li,
-aside a li {
+nav li a,
+aside li a {
   color: var(--fifth-color);
+  padding: .3em;
 }
-nav a li:hover,
-aside a li:hover {
+nav li a:hover,
+aside li a:hover {
   color: var(--fourth-color);
 }
 nav li,
@@ -116,7 +117,7 @@ aside img {
   width: 25px;
 }
 
-nav a.active li {
+nav li a.active {
   background-color: var(--fifth-color);
   color: var(--first-color);
 }
@@ -352,8 +353,7 @@ footer .fa-w-14 {
 .secondary-page fieldset {
   font-size: 1.3em;
 }
-/* .secondary-page p a,
-.secondary-page li a { */
+
 .sourse {
   color: var(--third-color);
   font-size: .6em;
