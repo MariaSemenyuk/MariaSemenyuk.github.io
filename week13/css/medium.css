@@ -13,6 +13,7 @@
   main.directory > div {
     grid-template-columns: repeat(2, auto);
   }
+
 }
 
 @media all and (min-width: 501px) {

@@ -339,7 +339,9 @@ footer .fa-w-14 {
 .secondary-page p,
 .secondary-page li,
 .secondary-page label,
-.secondary-page fieldset {
+.secondary-page fieldset,
+.secondary-page td,
+.secondary-page th {
   font-family: 'Noto Sans SC', sans-serif;
   font-weight: 300;
   letter-spacing: .7px;
@@ -347,7 +349,7 @@ footer .fa-w-14 {
 }
 .secondary-page p,
 .secondary-page li,
-.secondary-page fieldset {
+.secondary-page fieldset, {
   font-size: 1.3em;
 }
 /* .secondary-page p a,
@@ -419,6 +421,24 @@ textarea {
 .join li {
   border-bottom: 1px solid var(--third-color);
   padding: .5em .3em;
+}
+.join p {
+  margin-bottom: 3em;
+  font-size: 1.2em;
+}
+
+
+.join table {
+  width: 100%;
+  margin-bottom: 3em;
+}
+.join td {
+  padding: 1em 0;
+  border-bottom: 1px solid var(--third-color);
+}
+.join th {
+  text-align: left;
+  font-weight: 700;
 }
 
 

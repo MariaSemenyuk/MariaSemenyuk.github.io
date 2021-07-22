@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'https://raw.githubusercontent.com/MariaSemenyuk/mariasemenyuk.github.io/master/week13/js/companies-list.json';
 
 fetch(requestURL)
   .then(function (response) {
@@ -6,27 +6,23 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const companies = jsonObject['companies'];
-    console.table(jsonObject);
-    // for (let i = 0; i < companies.length; i++ ) {
-    //   let card = document.createElement('section');
-    //   let h2 = document.createElement('h2');
-    //   let p1 = document.createElement('p');
-    //   let p2 = document.createElement('p');
-    //   let div = document.createElement('div');
-    //   let image = document.createElement('img');
+    // console.table(jsonObject);
 
-    //   h2.textContent = companies[i].name + ' ' + companies[i].lastname;
-    //   card.appendChild(h2);
-    //   p1.textContent = 'Date of Birth: ' + companies[i].birthdate;
-    //   card.appendChild(p1);
-    //   p2.textContent = 'Place of Birth: ' + companies[i].birthplace;
-    //   card.appendChild(p2);
+    for (let i = 0; i < companies.length; i++ ) {
+      let card = document.createElement('div');
+      let a = document.createElement('a');
+      let image = document.createElement('img');
+      let p = document.createElement('p');
+      
+      card.appendChild(a);
+      a.appendChild(image);
+      card.appendChild(p);
 
-    //   image.setAttribute('src', companies[i].imageurl);
-    //   image.setAttribute('alt', companies[i].name + ' ' + companies[i].lastname + ' - ' + (i + 1));
-    //   div.appendChild(image);
-    //   card.appendChild(div);
+      a.setAttribute('href', companies[i].businessWebsite);
+      image.setAttribute('src', companies[i].logo);
+      image.setAttribute('alt', companies[i].businessName + ' logo');
+      p.textContent = companies[i].businessAddres;
 
-    //   document.querySelector('div.cards').appendChild(card);
-    // }
+      document.querySelector('#membersList').appendChild(card);
+    }
   });
